@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- je n'ai pas encore appris la propriété "transform" donc je me suis débrouillé, mais c'est l'une des propriétés les plus utilisés pour résoudre ce challenge (je me suis probablement compliqué la vie, mais je viens de m'en aperçevoir) -->
+
+<body>
+
+    <div class="vert-line-mag"></div> <!-- mag stands for magenta -->
+<div class="vert-line-pink"></div>
+<div class="rectangle-top"></div>
+<div class="rectangle-center rectangle-top"></div>
+<div class="rectangle-bottom rectangle-top"></div>
+
+<style>
+
+  body{
+    background: #FAD3E5;
+  }
+  
+  /*horizontal stuff*/
+  .vert-line-mag {
+    width: 20px;
+    height: 100vh;
+    background: #8B0051;
+
+    position: absolute;
+    top: 0;
+    left: 47.5vw;
+  }
+
+  .vert-line-pink{
+    width: 20px;
+    height: 33.4vh;
+    background: #FAD3E5;
+
+    position: absolute;
+    top: 33.4vh;
+    left: 47.5vw;
+
+    z-index: 100;
+  }
+
+  /*vertical stuff*/
+  .rectangle-top{
+    background: #FAD3E5;
+    width: 100px;
+    height: 25px;
+
+    position: absolute;
+    top: 26.5vh;
+    left: 32.5vw;
+
+    border-top: 20px solid #8B0051;
+    border-left: 20px solid #8B0051;
+    border-right: 20px solid #8B0051;
+
+    z-index: 1;
+  }
+
+  .rectangle-center{
+    width: 180px;
+    
+    top: 40vh;
+    left: 22.5vw;
+
+    z-index: 2;
+  }
+
+  .rectangle-bottom{
+    width: 260px;
+    height: 20px;
+    
+    top: 53.4vh;
+    left: 12.4vw;
+
+    z-index: 3;
+
+    border-bottom: 20px solid #8B0051;
+  }
+  
+</style>
+    
+</body>
+</html>
