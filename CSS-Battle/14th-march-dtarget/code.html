@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="top"></div><div class="top bottom"></div>
+
+<div class="left"></div>
+<div class="left right"></div>
+
+<style>
+
+  body{
+    background: #7E2926;
+  }
+  
+  .top {
+    border-top: 100px solid #FEFF92;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+
+    position: absolute;
+    top: 0;
+    left: 31.3vw;
+
+    z-index: 1;
+  }
+
+  .bottom{
+    border-bottom: 100px solid #FEFF92;
+    bottom: 0;
+  }
+
+  .left{
+    background: #D2934B;
+    width: 75px;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 31.2vw;
+  }
+
+  .right{
+    background: #DEB365;
+    left: 50vw;
+  }
+  
+</style>
+    
+</body>
+</html>
