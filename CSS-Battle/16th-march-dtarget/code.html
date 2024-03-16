@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- peut être qu'en jouant avec la propriété de shadow on aurait pu faire quelque chose mais je n'ai pas su comment -->
+
+<body>
+
+  <div class="bottom"></div>
+<div class="bottom top"></div>
+<div class="hole-square-bot"></div>
+<div class="hole-square-bot hole-square-top"></div>
+
+<style>
+
+  body{
+    background: #EAEB8D;
+  }
+  
+  .bottom {
+    width: 50px;
+    height: 50px;
+    
+    background: #F9B125;
+
+    border-right: 50px solid #F48B26;
+    border-bottom: 50px solid #F48B26;
+
+    position: absolute;
+    left: 25vw;
+    top: 50vh;
+  }
+
+  .top{
+    top: 16.5vh;
+    left: 50vw;
+
+    background: #F48B26;
+
+    border-left: 50px solid #F9B125;
+    border-top: 50px solid #F9B125;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .hole-square-bot{
+    background: #EAEB8D;
+    width: 30px;
+    height: 30px;
+
+    outline: 10px solid #FECE22;
+
+    position: absolute;
+    left: 40vw;
+    top: 70vh;
+  }
+
+  .hole-square-top{
+    left: 52.5vw;
+    top: 20vh;
+  }
+</style>
+    
+</body>
+</html>
